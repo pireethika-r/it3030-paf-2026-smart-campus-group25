@@ -182,7 +182,7 @@ const Login = () => {
               onClick={() => window.location.href = "http://localhost:8080/oauth2/authorization/google"}
               className="water-button w-full rounded-2xl py-3 font-bold text-white mt-3 shadow-lg transition"
             >
-              Login with Google
+               Login with Google
             </button>
 
             <div className="mt-8 text-center text-sm text-slate-600">
