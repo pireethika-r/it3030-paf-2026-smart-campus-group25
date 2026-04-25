@@ -19,7 +19,7 @@ public class OAuthController {
     private UserAccountRepository userAccountRepository;
 
     @GetMapping("/success")
-public Map<String, Object> success(@AuthenticationPrincipal OAuth2User oauthUser) {
+    public Map<String, Object> success(@AuthenticationPrincipal OAuth2User oauthUser) {
 
     if (oauthUser == null) {
         throw new RuntimeException("OAuth user is null");
