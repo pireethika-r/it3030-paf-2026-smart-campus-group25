@@ -495,6 +495,7 @@ public class AuthService {
     }
 
     private record SignupOtpEntry(SignUpRequest request, String code, LocalDateTime expiresAt) {
+        
     }
 
     private record PasswordResetOtpEntry(String code, LocalDateTime expiresAt) {
