@@ -23,7 +23,6 @@ const OAuthSuccess = () => {
       })
   }, [])
 
-  
   return <h2 style={{textAlign:"center"}}>Logging in...</h2>
 }
 

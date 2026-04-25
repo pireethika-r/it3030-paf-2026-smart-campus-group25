@@ -19,7 +19,6 @@ const notificationCategoryLabels = {
 }
 
 // Admin Dashboard
-
 const AdminDashboard = () => {
   const navigate = useNavigate()
   const [searchParams] = useSearchParams()
