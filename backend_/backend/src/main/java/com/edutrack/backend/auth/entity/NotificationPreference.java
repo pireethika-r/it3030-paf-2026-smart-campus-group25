@@ -17,8 +17,8 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(
-        name = "notification_preferences",
-        uniqueConstraints = @UniqueConstraint(columnNames = {"user_id", "category"})
+    name = "notification_preferences",
+    uniqueConstraints = @UniqueConstraint(columnNames = {"user_id", "category"})
 )
 public class NotificationPreference {
 
