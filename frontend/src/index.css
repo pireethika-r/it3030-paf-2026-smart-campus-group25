@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+.water-button {
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+	background: linear-gradient(120deg, #1e3a8a, #2563eb 35%, #0f766e 65%, #1d4ed8);
+	background-size: 220% 220%;
+	animation: waterBaseShift 4.5s ease-in-out infinite;
+}
+
+.water-button::before {
+	content: '';
+	position: absolute;
+	inset: -120% -25% auto;
+	height: 220%;
+	background: repeating-radial-gradient(circle at center, rgba(255, 255, 255, 0.22) 0 9px, rgba(255, 255, 255, 0) 10px 24px);
+	opacity: 0.55;
+	transform: translateY(32%);
+	animation: waterFlow 3.2s linear infinite;
+}
+
+.water-button::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(120deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 75%);
+	transform: translateX(-120%);
+	animation: waterShine 2.8s ease-in-out infinite;
+}
+
+.water-button > * {
+	position: relative;
+	z-index: 1;
+}
+
+@keyframes waterFlow {
+	0% {
+		transform: translateY(32%) translateX(0) rotate(0deg);
+	}
+	100% {
+		transform: translateY(32%) translateX(-8%) rotate(360deg);
+	}
+}
+
+@keyframes waterBaseShift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes waterShine {
+	0% {
+		transform: translateX(-120%);
+	}
+	100% {
+		transform: translateX(120%);
+	}
+}
