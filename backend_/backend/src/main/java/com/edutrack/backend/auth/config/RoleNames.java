@@ -24,5 +24,6 @@ public final class RoleNames {
             case USER, ADMIN, TECHNICIAN, MANAGER -> normalized;
             default -> USER;
         };
+        
     }
 }

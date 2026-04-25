@@ -118,4 +118,5 @@ public class AdminAccountInitializer implements CommandLineRunner {
     private String normalizeItNumber(String itNumber) {
         return itNumber.trim().toUpperCase(Locale.ROOT);
     }
+    
 }
