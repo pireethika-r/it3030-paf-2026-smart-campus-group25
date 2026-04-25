@@ -11,5 +11,5 @@ public record UpdateNotificationPreferencesRequest(
 
         @NotNull(message = "Preferences map is required")
         Map<String, Boolean> preferences
-) {
+        ) {
 }
