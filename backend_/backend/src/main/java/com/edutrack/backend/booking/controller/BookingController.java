@@ -65,10 +65,10 @@ public class BookingController {
         return ResponseEntity.ok(bookingService.getMyUpcomingBookings(email, days));
     }
 
-    // @GetMapping("/my/summary")
-    // public ResponseEntity<BookingSummaryResponse> getMyBookingSummary(@RequestParam String email) {
-    //     return ResponseEntity.ok(bookingService.getMyBookingSummary(email));
-    // }
+    @GetMapping("/my/summary")
+    public ResponseEntity<BookingSummaryResponse> getMyBookingSummary(@RequestParam String email) {
+        return ResponseEntity.ok(bookingService.getMyBookingSummary(email));
+    }
 
     @GetMapping
     public ResponseEntity<List<BookingResponse>> getBookings(
@@ -90,11 +90,11 @@ public class BookingController {
         return ResponseEntity.ok(bookingService.getCalendarBookings(from, to, email));
     }
 
-    @GetMapping("/{id:\\d+}")
-    public ResponseEntity<BookingResponse> getBookingById(@PathVariable Long id) {
-        BookingResponse booking = bookingService.getBookingById(id);
-        return ResponseEntity.ok(booking);
-    }
+    // @GetMapping("/{id:\\d+}")
+    // public ResponseEntity<BookingResponse> getBookingById(@PathVariable Long id) {
+    //     BookingResponse booking = bookingService.getBookingById(id);
+    //     return ResponseEntity.ok(booking);
+    // }
 
     @GetMapping("/qr/{token}")
     public ResponseEntity<BookingResponse> getBookingByQrToken(@PathVariable String token) {
