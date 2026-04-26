@@ -51,6 +51,7 @@ public class TicketAttachment {
     @Column(nullable = false, length = 120)
     private String uploadedByName;
 
+    
     @PrePersist
     void onCreate() {
         uploadedAt = LocalDateTime.now();
