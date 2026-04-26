@@ -207,21 +207,21 @@ const BookingApprovalPage = () => {
     })
   }
 
-  const onEditSave = async (booking) => {
-    if (!editForm) {
-      return
-    }
+  // const onEditSave = async (booking) => {
+  //   if (!editForm) {
+  //     return
+  //   }
 
-    try {
-      await updateBooking(booking.id, booking.requesterEmail, editForm)
-      setMessage('Booking updated by admin.')
-      setEditingId(null)
-      setEditForm(null)
-      void loadBookings()
-    } catch (updateError) {
-      setError(updateError.message)
-    }
-  }
+  //   try {
+  //     await updateBooking(booking.id, booking.requesterEmail, editForm)
+  //     setMessage('Booking updated by admin.')
+  //     setEditingId(null)
+  //     setEditForm(null)
+  //     void loadBookings()
+  //   } catch (updateError) {
+  //     setError(updateError.message)
+  //   }
+  // }
 
   const onCancel = async (booking) => {
     try {

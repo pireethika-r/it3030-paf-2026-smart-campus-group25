@@ -4,15 +4,15 @@ import { createBooking } from '../api/bookingApi.js'
 
 const resourceTypes = ['LECTURE_HALL', 'LAB', 'MEETING_ROOM', 'EQUIPMENT']
 
-const initialForm = {
-  resourceType: 'LECTURE_HALL',
-  resourceName: '',
-  purpose: '',
-  bookingDate: '',
-  startTime: '',
-  endTime: '',
-  recurrenceCount: 1,
-}
+// const initialForm = {
+//   resourceType: 'LECTURE_HALL',
+//   resourceName: '',
+//   purpose: '',
+//   bookingDate: '',
+//   startTime: '',
+//   endTime: '',
+//   recurrenceCount: 1,
+// }
 
 const durationPresets = [30, 60, 90, 120]
 

@@ -90,11 +90,11 @@ public class BookingController {
         return ResponseEntity.ok(bookingService.getCalendarBookings(from, to, email));
     }
 
-    @GetMapping("/{id:\\d+}")
-    public ResponseEntity<BookingResponse> getBookingById(@PathVariable Long id) {
-        BookingResponse booking = bookingService.getBookingById(id);
-        return ResponseEntity.ok(booking);
-    }
+    // @GetMapping("/{id:\\d+}")
+    // public ResponseEntity<BookingResponse> getBookingById(@PathVariable Long id) {
+    //     BookingResponse booking = bookingService.getBookingById(id);
+    //     return ResponseEntity.ok(booking);
+    // }
 
     @GetMapping("/qr/{token}")
     public ResponseEntity<BookingResponse> getBookingByQrToken(@PathVariable String token) {
