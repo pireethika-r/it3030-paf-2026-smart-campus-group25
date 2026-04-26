@@ -19,18 +19,18 @@ const statusBadge = {
   CANCELLED: 'bg-slate-200 text-slate-700',
 }
 
-const initialAdminCreate = {
-  requesterName: '',
-  requesterEmail: '',
-  requesterItNumber: '',
-  resourceType: 'LECTURE_HALL',
-  resourceName: '',
-  purpose: '',
-  bookingDate: '',
-  startTime: '',
-  endTime: '',
-  recurrenceCount: 1,
-}
+// const initialAdminCreate = {
+//   requesterName: '',
+//   requesterEmail: '',
+//   requesterItNumber: '',
+//   resourceType: 'LECTURE_HALL',
+//   resourceName: '',
+//   purpose: '',
+//   bookingDate: '',
+//   startTime: '',
+//   endTime: '',
+//   recurrenceCount: 1,
+// }
 
 const resourceTypes = ['LECTURE_HALL', 'LAB', 'MEETING_ROOM', 'EQUIPMENT']
 
