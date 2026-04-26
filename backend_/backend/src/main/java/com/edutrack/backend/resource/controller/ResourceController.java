@@ -25,10 +25,11 @@ public class ResourceController {
         this.resourceService = resourceService;
     }
 
-    @PostMapping("/add")
-    public Resource addResource(@Valid @RequestBody Resource resource) {
-        return resourceService.saveResource(resource);
-    }
+    
+    @PostMapping
+public Resource addResource(@Valid @RequestBody Resource resource) {
+    return resourceService.saveResource(resource);
+}
 
     @GetMapping("/all")
     public List<Resource> getAll() {
