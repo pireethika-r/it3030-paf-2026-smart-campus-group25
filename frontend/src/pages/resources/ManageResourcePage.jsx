@@ -10,7 +10,6 @@ import ResourceForm from '../../components/forms/ResourceForm';
 
 // Import Custom Hook
 import { useResourceData } from '../../hooks/useResourceData';
-
 const ManageResourcePage = () => {
     const { id } = useParams();
     const navigate = useNavigate();
