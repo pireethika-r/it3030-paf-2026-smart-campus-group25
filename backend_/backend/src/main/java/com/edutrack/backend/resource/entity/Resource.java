@@ -37,6 +37,5 @@ public class Resource {
     private String location;
 
     private String availabilityWindows;
-
     private String status;
 }

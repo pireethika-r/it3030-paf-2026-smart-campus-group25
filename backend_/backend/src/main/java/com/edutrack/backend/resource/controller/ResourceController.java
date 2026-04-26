@@ -18,7 +18,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/resources")
 public class ResourceController {
-
     private final ResourceService resourceService;
 
     public ResourceController(ResourceService resourceService) {
