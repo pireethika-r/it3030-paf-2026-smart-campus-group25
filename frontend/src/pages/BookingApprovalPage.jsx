@@ -19,18 +19,18 @@ const statusBadge = {
   CANCELLED: 'bg-slate-200 text-slate-700',
 }
 
-// const initialAdminCreate = {
-//   requesterName: '',
-//   requesterEmail: '',
-//   requesterItNumber: '',
-//   resourceType: 'LECTURE_HALL',
-//   resourceName: '',
-//   purpose: '',
-//   bookingDate: '',
-//   startTime: '',
-//   endTime: '',
-//   recurrenceCount: 1,
-// }
+const initialAdminCreate = {
+  requesterName: '',
+  requesterEmail: '',
+  requesterItNumber: '',
+  resourceType: 'LECTURE_HALL',
+  resourceName: '',
+  purpose: '',
+  bookingDate: '',
+  startTime: '',
+  endTime: '',
+  recurrenceCount: 1,
+}
 
 const resourceTypes = ['LECTURE_HALL', 'LAB', 'MEETING_ROOM', 'EQUIPMENT']
 
@@ -207,21 +207,21 @@ const BookingApprovalPage = () => {
     })
   }
 
-  const onEditSave = async (booking) => {
-    if (!editForm) {
-      return
-    }
+  // const onEditSave = async (booking) => {
+  //   if (!editForm) {
+  //     return
+  //   }
 
-    try {
-      await updateBooking(booking.id, booking.requesterEmail, editForm)
-      setMessage('Booking updated by admin.')
-      setEditingId(null)
-      setEditForm(null)
-      void loadBookings()
-    } catch (updateError) {
-      setError(updateError.message)
-    }
-  }
+  //   try {
+  //     await updateBooking(booking.id, booking.requesterEmail, editForm)
+  //     setMessage('Booking updated by admin.')
+  //     setEditingId(null)
+  //     setEditForm(null)
+  //     void loadBookings()
+  //   } catch (updateError) {
+  //     setError(updateError.message)
+  //   }
+  // }
 
   const onCancel = async (booking) => {
     try {
