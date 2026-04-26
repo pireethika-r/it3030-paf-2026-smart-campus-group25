@@ -59,6 +59,7 @@ public class TicketController {
         return ResponseEntity.ok(ticketService.getMyTickets(actorEmail, actorRole));
     }
 
+    
     @GetMapping
     public ResponseEntity<List<TicketResponse>> getAllTickets(
             @RequestHeader("X-User-Email") String actorEmail,
