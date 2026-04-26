@@ -26,6 +26,7 @@ const LiveStatusIndicator = ({ status }) => {
     );
 };
 
+
 const ResourceListPage = () => {
     const navigate = useNavigate();
     const [resources, setResources] = useState([]);
