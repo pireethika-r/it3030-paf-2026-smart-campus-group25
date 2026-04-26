@@ -6,4 +6,5 @@ import jakarta.validation.constraints.Size;
 public record UpdateTicketStatusRequest(
         TicketStatus status,
         @Size(max = 2000) String rejectionReason) {
+                
 }

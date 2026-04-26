@@ -11,6 +11,7 @@ public record TicketAttachmentResponse(
         String downloadUrl,
         LocalDateTime uploadedAt) {
 
+            
     public static TicketAttachmentResponse from(TicketAttachment attachment) {
         return new TicketAttachmentResponse(
                 attachment.getId(),
