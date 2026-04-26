@@ -64,7 +64,6 @@ const AddResourcePage = () => {
                         <StatusAlert message={message} />
 
                         {/* Automation Enabled message block has been removed from here */}
-
                         <ResourceForm resource={resource} handleChange={handleChange}>
                             <div className="pt-10">
                                 <ActionButton

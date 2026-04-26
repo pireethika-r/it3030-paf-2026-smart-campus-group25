@@ -25,7 +25,6 @@ public class ResourceController {
         this.resourceService = resourceService;
     }
 
-    
     @PostMapping
 public Resource addResource(@Valid @RequestBody Resource resource) {
     return resourceService.saveResource(resource);
