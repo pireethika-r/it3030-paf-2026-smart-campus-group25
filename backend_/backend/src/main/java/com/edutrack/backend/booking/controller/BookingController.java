@@ -76,6 +76,7 @@ public class BookingController {
         List<BookingResponse> bookings = bookingService.getBookings(status);
         return ResponseEntity.ok(bookings);
     }
+    
 
     @GetMapping("/admin/analytics")
     public ResponseEntity<AdminAnalyticsResponse> getAdminAnalytics() {
