@@ -44,14 +44,14 @@ public class BookingController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
-    @GetMapping("/verify-student")
-    public ResponseEntity<StudentVerificationResponse> verifyStudentForAdmin(
-            @RequestParam String name,
-            @RequestParam String email,
-            @RequestParam String itNumber) {
-        StudentVerificationResponse response = bookingService.verifyStudentForAdmin(name, email, itNumber);
-        return ResponseEntity.ok(response);
-    }
+    // @GetMapping("/verify-student")
+    // public ResponseEntity<StudentVerificationResponse> verifyStudentForAdmin(
+    //         @RequestParam String name,
+    //         @RequestParam String email,
+    //         @RequestParam String itNumber) {
+    //     StudentVerificationResponse response = bookingService.verifyStudentForAdmin(name, email, itNumber);
+    //     return ResponseEntity.ok(response);
+    // }
 
     @GetMapping("/my")
     public ResponseEntity<List<BookingResponse>> getMyBookings(@RequestParam String email) {
