@@ -123,7 +123,7 @@ public class AuthController {
     public ResponseEntity<NotificationPreferencesResponse> getNotificationPreferences(
             @RequestParam String email
     ) {
-        return ResponseEntity.ok(notificationPreferenceService.getPreferencesByEmail(email));
+        return ResponseEntity.ok(notificationPreferenceService.getPreferences(email));
     }
 
     // Persists notification preference changes for a user.

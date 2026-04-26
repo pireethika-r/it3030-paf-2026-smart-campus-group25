@@ -35,9 +35,9 @@ public class SecurityConfig {
 
                         // Allow your APIs (you can secure later if needed)
                         .requestMatchers("/api/bookings/**", "/api/resources/**", "/api/tickets/**").permitAll()
-
+                        
                         // Everything else secured
-                        .anyRequest().authenticated()
+                        .anyRequest().permitAll()
                 )
 
                 // Existing basic auth (keep it)
@@ -56,7 +56,6 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-    
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();

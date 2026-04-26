@@ -8,5 +8,6 @@ import java.util.List;
 public interface NotificationPreferenceRepository extends JpaRepository<NotificationPreference, Long> {
 
     List<NotificationPreference> findByUserAccountId(Long userId);
-    
+
+    List<NotificationPreference> findByUserAccount_Email(String email);
 }
