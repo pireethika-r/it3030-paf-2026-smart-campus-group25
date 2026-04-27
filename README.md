@@ -9,7 +9,9 @@ This system manages campus resources, bookings, and maintenance tickets.
 ## 👥 Group Members
 
 * Pireethika R
-* 
+* Jeyakumar S P
+* Tharukanan K
+* Kiyathan S
 
 ---
 
